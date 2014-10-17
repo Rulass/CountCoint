@@ -60,14 +60,14 @@ public class CountCoinTest {
 	@Test
 	public void testCalulateCoinsFor10Cent() {
 		CountCoins countCoins = new CountCoins();
-		String expected = "1 dime o 2 niquel o 1 niquel y 5 pennie o 10 penies";
+		String expected = "1 dime o 2 nickel o 1 nickel y 5 pennie o 10 pennie";
 		String result = countCoins.changeOf(10);
 		assertEquals(expected, result);
 	}
 	@Test 
 	public void testCalulateCoinsFor11Cent() {
 		CountCoins countCoins = new CountCoins();
-		String expected = "1 dime y 1 pennie o 2 niquel y 1 pennie o 1 niquel y 6 pennie o 11 penies";
+		String expected = "1 dime y 1 pennie o 2 nickel y 1 pennie o 1 nickel y 6 pennie o 11 pennie";
 		String result = countCoins.changeOf(11);
 		assertEquals(expected, result);
 	}
